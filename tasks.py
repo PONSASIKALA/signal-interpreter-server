@@ -3,8 +3,8 @@ from subprocess import call
 from invoke import task
 
 CURR_DIR = os.path.abspath(os.path.dirname(__file__))
-""" signal-interpreter-server while running in local PC"""
-SRC_DIR = os.path.join(CURR_DIR, "tests")
+""" run on tests folder in local PC"""
+SRC_DIR = os.path.join(CURR_DIR, "signal-interpreter-server-main")
 UNIT_TEST_DIR = os.path.join(CURR_DIR, "tests", "unit")
 COV_PATH = os.path.join(CURR_DIR, ".coveragerc")
 
