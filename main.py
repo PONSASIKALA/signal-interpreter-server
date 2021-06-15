@@ -13,6 +13,8 @@ def main():
     json_parser.load_file(args.file_path)
     signal_interpreter_app.run()
 
-
-if __name__ == "__main__":
-    main()
+def init():
+	if __name__ == "__main__":
+		main()
+		
+init()
