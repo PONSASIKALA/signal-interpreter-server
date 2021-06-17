@@ -6,7 +6,7 @@ CURR_DIR = os.path.abspath(os.path.dirname(__file__))
 SRC_DIR = os.path.join(CURR_DIR, "signal_interpreter_server")
 UNIT_TEST_DIR = os.path.join(CURR_DIR, "tests", "unit")
 COV_PATH = os.path.join(CURR_DIR, ".coveragerc")
-
+EXER_DIR = os.path.join(UNIT_TEST_DIR, "exercises")
 
 @task
 def style(c):
@@ -20,7 +20,7 @@ def lint(c):
 
 @task
 def unit_test(c):
-    ignore_ex = "--ignore exercise_1 --ignore exercise_2 --ignore exercise_3 --ignore exercise_4 --ignore exercise_5"
+    ignore_ex = f"--ignore {EXER_DIR}"
     return_value = c.run(f"pytest {UNIT_TEST_DIR} --cov {SRC_DIR} --cov-config={COV_PATH} --verbose {ignore_ex}")
     
     if return_value == 0:
