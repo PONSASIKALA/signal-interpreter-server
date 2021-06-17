@@ -1,3 +1,4 @@
+"""Main module"""
 from argparse import ArgumentParser
 from signal_interpreter_server.routes import signal_interpreter_app, json_parser
 
