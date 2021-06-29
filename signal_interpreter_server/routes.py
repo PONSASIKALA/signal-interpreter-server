@@ -7,9 +7,11 @@ from flask import Flask, request, jsonify, abort
 
 from signal_interpreter_server.exceptions import JsonParserError
 from signal_interpreter_server.json_parser import JsonParser
+from signal_interpreter_server.xml_parser import XmlParser
 
 signal_interpreter_app = Flask(__name__)
 json_parser = JsonParser()
+xml_parser = XmlParser()
 
 logger = logging.getLogger(__name__)
 
