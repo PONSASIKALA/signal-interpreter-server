@@ -4,7 +4,7 @@
 import logging
 from argparse import ArgumentParser
 
-from signal_interpreter_server.routes import json_parser, signal_interpreter_app
+from signal_interpreter_server.routes import json_parser, signal_interpreter_app, xml_parser
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +22,7 @@ def main():
     """ Main """
     args = parse_arguments()
     json_parser.load_file(args.file_path)
+	xml_parser.load_file(args.file_path)
     logger.debug("Starting signal interpreter server")
     signal_interpreter_app.run()
 
