@@ -5,8 +5,9 @@ name = "pypi"
 
 [packages]
 flask = "*"
-pyyaml = "*"
+pytest = "*"
 xmltodict = "*"
+pyyaml = "*"
 
 [dev-packages]
 pytest = "*"
