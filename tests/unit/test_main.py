@@ -1,7 +1,9 @@
+""" Unit tests for main.py """
 from unittest.mock import patch
 
+from signal_interpreter_server.json_parser import JsonParser
 from signal_interpreter_server.main import main, ArgumentParser, parse_arguments, init
-from signal_interpreter_server.routes import JsonParser, signal_interpreter_app
+from signal_interpreter_server.routes import signal_interpreter_app
 
 
 class MockArguments:
@@ -31,4 +33,3 @@ def test_init():
         with patch("signal_interpreter_server.main.__name__", "__main__"):
             init()
             mock_main.assert_called_once()
-
