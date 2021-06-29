@@ -1,4 +1,6 @@
 # routes.py
+# pylint: disable=missing-function-docstring
+
 from flask import Flask, request
 
 my_app = Flask(__name__)

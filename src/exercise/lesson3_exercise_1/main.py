@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 def main():
     print("Hello world!")
 

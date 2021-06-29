@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from unittest.mock import patch, call
 
 from lesson_3.exercise_3.coin_flip import get_three_heads

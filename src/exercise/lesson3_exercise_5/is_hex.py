@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 def is_hex(input_value):
     try:
         int(input_value, 16)

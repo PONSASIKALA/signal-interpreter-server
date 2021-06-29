@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 import pytest
 
 from lesson_3.exercise_4.capitals import practice_capitals

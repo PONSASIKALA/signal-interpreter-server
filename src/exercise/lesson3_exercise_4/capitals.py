@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 def practice_capitals():
     country = input("Enter a country: ")
     try:

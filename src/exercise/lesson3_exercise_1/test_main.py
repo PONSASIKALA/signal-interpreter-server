@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from unittest.mock import patch
 
 from lesson_3.exercise_1.main import main, init
