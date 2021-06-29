@@ -1,4 +1,6 @@
 """ Routes """
+# pylint: disable=missing-function-docstring
+
 import logging
 
 from flask import Flask, request, jsonify, abort

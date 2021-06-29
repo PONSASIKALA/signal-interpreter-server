@@ -1,4 +1,5 @@
 """ Exceptions """
+# pylint: disable=missing-function-docstring
 
 
 class JsonParserError(Exception):

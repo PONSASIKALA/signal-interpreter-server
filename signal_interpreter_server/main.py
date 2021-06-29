@@ -1,4 +1,6 @@
 """ Main """
+# pylint: disable=missing-function-docstring
+
 import logging
 from argparse import ArgumentParser
 

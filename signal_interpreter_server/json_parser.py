@@ -1,4 +1,6 @@
 """ JSON parser """
+# pylint: disable=missing-function-docstring
+
 import json
 import logging
 

@@ -1,4 +1,6 @@
 """ Init """
+# pylint: disable=missing-function-docstring
+
 import logging.config
 import os
 
