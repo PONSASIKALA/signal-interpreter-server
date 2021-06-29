@@ -1,4 +1,6 @@
 """ Unit tests for json_parser.py """
+# pylint: disable=missing-function-docstring
+
 from unittest.mock import patch, mock_open
 
 import pytest

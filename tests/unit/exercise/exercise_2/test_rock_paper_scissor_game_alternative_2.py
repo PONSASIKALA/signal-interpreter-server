@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from unittest.mock import patch
 
 from lesson_2.exercise_2.rock_paper_scissor_game import decide_who_will_win, get_robot_choice, play_game

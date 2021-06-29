@@ -1,4 +1,6 @@
 """ Shared fixtures """
+# pylint: disable=missing-function-docstring
+
 import pytest
 
 from signal_interpreter_server.json_parser import JsonParser

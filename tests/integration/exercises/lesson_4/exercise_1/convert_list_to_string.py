@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 def convert_to_comma_separated_string(input_list):
     return ",".join(input_list)
 

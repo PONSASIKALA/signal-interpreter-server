@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from lesson_2.exercise_1.rock_paper_scissor_game import decide_who_will_win
 
 

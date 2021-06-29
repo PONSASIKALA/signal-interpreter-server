@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from lesson_2.exercise_3.get_name_from_user import get_name_from_user
 
 

@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 def decide_who_will_win(player_hand, robot_hand):
     if player_hand == "rock" and robot_hand == "scissor":
         return "You won!"

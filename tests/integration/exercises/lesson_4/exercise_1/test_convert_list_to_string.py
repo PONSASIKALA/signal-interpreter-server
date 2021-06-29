@@ -1,3 +1,5 @@
+# pylint: disable=missing-function-docstring
+
 from lesson_4.exercise_1.convert_list_to_string import convert_to_comma_separated_string, \
     convert_to_space_separated_string
 

@@ -1,4 +1,6 @@
 """ Unit tests for routes.py """
+# pylint: disable=missing-function-docstring
+
 from unittest.mock import patch
 
 from signal_interpreter_server.exceptions import JsonParserError

@@ -1,4 +1,6 @@
 """ Integration tests for interpreting a signal """
+# pylint: disable=missing-function-docstring
+
 import os
 import sys
 from unittest.mock import patch
