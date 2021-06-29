@@ -18,3 +18,11 @@ class ParserFactory:
         if not parser:
             raise ValueError(self._signal_database_format)
         return parser
+
+if __name__ == "__main__":
+    
+    factory = ParserFactory()
+    factory.register_format("JSON", JsonParser)
+    factory.register_language("XML", XmlParser)
+
+    parser = factory.get_parser("XML")
