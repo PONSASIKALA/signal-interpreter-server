@@ -1,9 +1,9 @@
 # pylint: disable=missing-function-docstring
 
 class ParserFactory:
-	""" Parser factor class """
+    """ Parser factor class """
 	
-	def __init__(self):
+   def __init__(self):
         self._parsers = {}
         self._signal_database_format = None
 
