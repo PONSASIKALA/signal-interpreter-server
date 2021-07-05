@@ -4,6 +4,7 @@
 from unittest.mock import patch
 
 from signal_interpreter_server.json_parser import JsonParser
+from signal_interpreter_server.xml_parser import ParserFactory
 from signal_interpreter_server.main import main, ArgumentParser, parse_arguments, init
 from signal_interpreter_server.routes import signal_interpreter_app
 
@@ -22,6 +23,7 @@ def test_parse_arguments(mock_add_argument, mock_parse_args):
 
 @patch.object(signal_interpreter_app, "run")
 @patch.object(JsonParser, "load_file")
+@patch.object(ParserFactory, "load_file")
 @patch("signal_interpreter_server.main.parse_arguments", return_value=MockArguments)
 def test_main(mock_parse_arguments, mock_load_file, mock_run):
     main()
