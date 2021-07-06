@@ -30,7 +30,8 @@ class XmlParser:
 
     def get_signal_title(self, identifier):
         """ Get signal title """
-        for service in self.data["services"]:
-            if service["id"] == identifier:
-                return service["title"]
+        for services in self.data["services"].values():
+            for service in services:
+                if service["@id"] == identifier:
+                    return service["title"]
         raise XmlParserError(f'Identifier "{identifier}" is not available in the signal database.')
